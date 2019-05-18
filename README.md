@@ -1,4 +1,4 @@
-# Setup
+## Setup
 
 #### Step 1
 Install docker, docker-compose
