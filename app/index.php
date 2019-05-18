@@ -1,3 +1,7 @@
 <?php
 
-  echo 'server is up and running';
+$app = new \Slim\App;
+
+require 'modules/graphql/index.php';
+
+$app->run();

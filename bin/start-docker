@@ -1,0 +1,4 @@
+#!/bin/bash
+
+docker-compose run web composer install
+docker-compose up

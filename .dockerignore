@@ -1,5 +1,6 @@
 node_modules
+vendor
 data
 
 docker-compose.yml
-/vendor/
+docker-compose.sample.yml

@@ -1,0 +1,13 @@
+{
+  "name": "konekred/php-app",
+  "authors": [
+    {
+      "name": "Wilson",
+      "email": "konekred@gmail.com"
+    }
+  ],
+  "require": {
+    "webonyx/graphql-php": "^0.13.4",
+    "slim/slim": "^3.12"
+  }
+}
