@@ -21,8 +21,11 @@ $app->post('/graphql', function ($request, $response, $args) {
   $variables = isset($params['variables']) ? $params['variables'] : null;
 
   try {
-    $rootValue = ['prefix' => 'You said: '];
-    $result = GraphQL::executeQuery($Schema, $query, $rootValue, null, $variables);
+    $root = [
+      'welcomeMessage' => 'Welcome to GraphQL'
+    ];
+
+    $result = GraphQL::executeQuery($Schema, $query, $root, null, $variables);
     $graph = $result->toArray();
     return $response->withJSON($graph);
 

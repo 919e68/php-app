@@ -3,8 +3,8 @@
 use GraphQL\Type\Definition\ObjectType;
 use GraphQL\Type\Definition\Type;
 
-$QueryType = new ObjectType([
-    'name' => 'Query',
+$MutationType = new ObjectType([
+    'name' => 'Mutation',
     'fields' => [
       'echo' => [
         'type' => Type::string(),
@@ -12,7 +12,7 @@ $QueryType = new ObjectType([
           'message' => Type::nonNull(Type::string()),
         ],
         'resolve' => function ($root, $args) {
-          return $root['welcomeMessage'] . ' ' . $args['message'] . ' you called a Query';
+          return $root['welcomeMessage'] . ' ' . $args['message'] . ' you called a Mutation';
         }
       ],
     ],
