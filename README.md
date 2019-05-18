@@ -1,7 +1,7 @@
 ## Setup
 
 #### Step 1
-Install docker, docker-compose
+Install `docker`, `docker-compose`
 
 #### Step 2
 ```
